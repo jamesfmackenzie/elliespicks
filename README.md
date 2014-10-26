@@ -1,4 +1,4 @@
-8-bit-Memories
-==============
+Ellie's Picks
+=============
 
-Inspired by the 8-bit videogames era. A personal blogging theme for Ghost.
+A personal blogging theme for Ghost. Created for http://www.elliespicks.com
