@@ -1,0 +1,301 @@
+
+/* ------ fonts ------ */
+
+
+/* ------ general styles ------ */
+
+body {
+  margin: 0;
+  font-family: 'Georgia', sans-serif;
+  font-size: 13px;
+  line-height: 1.8;
+  word-wrap: break-word;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: gray;
+}
+
+h1 {  
+  font-size: 40pt;
+  line-height: 40pt;
+}
+
+h2 { 
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 18pt;
+  letter-spacing: -1pt; 
+}
+
+img {
+	  max-width: 100%;
+}
+
+hr {
+  margin-top: 30px;
+}
+
+/* ------ page header ------ */
+
+#toplinks {
+  font-family: Georgia;
+  font-size: 12px;
+  background-color: #61DDD0;
+  text-align: right;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+#toplinks  ul {
+  padding: 3px 10px 0 3px;
+  margin: 0;
+}
+
+#toplinks  ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+#toplinks  ul li a {
+  text-decoration: none;
+}
+
+#toplinks  ul li a:hover{
+  text-decoration: underline;
+  color: black;
+}
+
+#site-header {
+  margin: 0 auto 0 auto;
+  width: 1000px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+
+.blog-title {
+  font-family: 'Georgia';  
+  font-weight: normal; 
+  margin: 0;
+  font-size: 50pt;
+}
+
+.blog-title a {
+  text-decoration: none;
+}
+
+#socialmedia {
+  width: 100px;
+  right: -5px;
+  text-align: right;
+  position: absolute;
+  top: 95px;
+  letter-spacing: 5px;
+}
+
+/* ------ main content area ------ */
+
+main {
+  display: block;
+  width: 1000px;
+  margin: 0 auto 0 auto;
+}
+
+/* ------ navigation areas ------ */
+
+nav {
+  float: right;
+  width: 240px;
+  text-align: center;
+}
+
+/* ------ individual post ------ */
+
+article {
+  position: relative;
+  margin-right: 260px;
+  margin-top: 40px;
+  border-bottom: 1px solid black;
+}
+
+.articletitle {
+  display: block;
+  font-family: Georgia;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 30px;
+}
+
+.articletitle a {
+   text-decoration: none;
+}
+
+.sidebartitle {
+  display: block;
+  font-family: Georgia;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+  margin-bottom: 5px;
+}
+
+.date {
+  display: block;
+  font-family: courier;
+  text-transform: uppercase;
+}
+
+.post-header h2 a {
+  color: black;
+}
+
+.post-header h2 a:hover {
+  background-color: black;
+  color: white;
+}
+
+.post-header p {
+  margin:0 0 6px 0;
+}
+
+.post-header h2 {
+  margin:0;
+}
+
+pre {
+  background-color: lightgray;
+  padding: 12px;
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+code { 
+  background-color: lightgray;
+  padding: 2px;
+  font-size: 11pt;
+}
+
+/* ------ page footer ------ */
+
+#site-footer {
+  margin-top: 40pt;
+  border-top: 1px solid black;
+  font-family: Georgia;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#site-footer  ul {
+  padding: 3px 10px 0 3px;
+  margin: 0;
+}
+
+#site-footer  ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+#site-footer  ul li a {
+  text-decoration: none;
+}
+
+#site-footer  ul li a:hover{
+  text-decoration: underline;
+}
+
+/* ------ mobile (smaller than 700px) ------ */
+
+@media only screen and (max-width: 700px) {
+
+  #sidebar {
+    display:none;
+  }
+  
+  .blog-title {
+    font-size: 40pt;
+  }
+  
+  article {
+    margin-right: 0;
+  }
+
+  body {
+    font-size: 11pt;
+  }
+
+  code { 
+    font-size: 10pt;
+    padding: 1px;
+  }
+  
+  h1 { 
+    font-size: 28pt;
+    line-height: 28pt;
+  }
+
+  h2 { 
+    font-size: 18pt;
+    line-height: 18pt;
+  }
+
+  h3 {
+    font-size: 14pt;
+  }
+  
+  main {
+    max-width: calc(100% - 30px);
+    margin: 0 15px 0 15px;
+  }
+  
+  img {
+    height: auto;
+    width: auto;
+  }
+  
+  #toplinks {
+    text-align: center;
+  }
+  
+#toplinks  ul li {
+  display: inline;
+  margin: 0 3px 0 3px;
+}
+
+#socialmedia {
+  display: none;
+}
+  
+   #site-header  {
+    max-width: calc(100% - 30px);
+    margin: 0 15px 0 15px;
+  }
+  
+  #site-header h1 {
+    margin: 0 15px 0 15px;
+  }
+  
+    #toplinks {
+    text-align: center;
+  }
+  
+#site-footer  ul li {
+  display: inline;
+  margin: 0 3px 0 3px;
+}
+
+}

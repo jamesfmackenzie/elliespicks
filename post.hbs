@@ -1,0 +1,13 @@
+{{!< default.hbs}}
+
+{{#post}}
+  <article>
+    <header class="post-header">
+      <span class="articletitle"><a href="{{url}}">{{title}}</a></span>
+	  <span class="date">{{date format="dddd, Do MMMM YYYY"}}</span>
+    </header>
+    {{content}}
+    </section>
+  </article>
+{{/post}}
+

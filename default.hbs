@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{meta_title}}</title>
+<script type="text/javascript" src="{{asset "js/jquery-2.1.1.min.js"}}"></script>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{{asset "css/screen.css"}}" />
+{{ghost_head}}
+</head>
+
+<body>
+
+<header id="site-header">
+
+<nav id="toplinks">
+  <ul>
+    <li><a href="#">About me</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Disclaimer</a></li>
+  </ul>
+</nav>
+
+<nav id="socialmedia">
+  <a href="https://www.facebook.com/elliespicks" target="_blank" title="Facebook"><i class="fa fa-facebook-square fa-3x"></i></a>
+  <a href="http://instagram.com/elliespicks" target="_blank" title="Instagram"><i class="fa fa-instagram fa-3x"></i></a>
+</nav>
+
+{{#if @blog.logo}}<h1><a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a></h1>
+{{else}}<span class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></span>{{/if}}
+
+</header>
+
+<main>
+  <nav id="sidebar">
+    <span class="sidebartitle">Search on ellie's picks <i class="fa fa-search"></i></span>
+
+    <!-- Use of this code assumes agreement with the Google Custom Search Terms of Service. -->
+    <!-- The terms of service are available at http://www.google.com/cse/docs/tos.html -->
+    <form name="cse" id="searchbox_demo" action="http://www.google.com/cse">
+      <input type="hidden" name="cref" value="" />
+      <input type="hidden" name="ie" value="utf-8" />
+      <input type="hidden" name="hl" value="" />
+      <input name="q" type="text" size="21" />
+      <input type="submit" name="sa" value="Search" />
+    </form>
+    <script type="text/javascript" src="https://www.google.com/cse/tools/onthefly?form=searchbox_demo&lang="></script>
+                                
+  </nav>
+  {{{body}}}
+</main>
+
+<footer id="site-footer">
+  <ul>
+    <li><a href="https://github.com/jamesfmackenzie/elliespicks">Ellie's picks theme</a> by <a href="http://www.jamesfmackenzie.com">jamesfmackenzie</a></li>
+    <li>Blog powered by <a href="http://www.ghost.org" target="_blank">Ghost</a></li>
+    <li><a href="{{@blog.url}}/rss">RSS</a></li>
+  </ul>
+</footer>
+
+</body>
+
+</html>

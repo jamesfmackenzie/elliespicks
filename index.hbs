@@ -1,0 +1,14 @@
+{{!< default.hbs}}
+
+{{#foreach posts}}
+  <article class="articleexcerpt">
+    <header class="post-header">
+      <span class="articletitle"><a href="{{url}}">{{title}}</a></span>
+	  <span class="date">{{date format="dddd, Do MMMM YYYY"}}</span>
+    </header>
+    {{content words="0"}}
+	{{excerpt}} ...
+    <p><a href="{{url}}">Read More</a> | <a href="{{url}}#disqus_thread">Comments</a></p>
+    </article>
+  
+{{/foreach}}
