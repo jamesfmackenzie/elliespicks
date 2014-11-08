@@ -6,9 +6,23 @@
       <span class="articletitle"><a href="{{url}}">{{title}}</a></span>
 	  <span class="date">{{date format="dddd, Do MMMM YYYY"}}</span>
     </header>
-    {{content words="0"}}
+    <img src="{{image}}" class="post-cover-image" />
 	{{excerpt}} ...
     <p><a href="{{url}}">Read More</a> | <a href="{{url}}#disqus_thread">Comments</a></p>
     </article>
   
 {{/foreach}}
+
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'elliespicks'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+    

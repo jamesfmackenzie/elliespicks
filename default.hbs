@@ -17,9 +17,9 @@
 
 <nav id="toplinks">
   <ul>
-    <li><a href="#">About me</a></li>
-    <li><a href="#">Contact</a></li>
-    <li><a href="#">Disclaimer</a></li>
+    <li><a href="/about-me">About me</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/disclaimer">Disclaimer</a></li>
   </ul>
 </nav>
 
@@ -28,7 +28,7 @@
   <a href="http://instagram.com/elliespicks" target="_blank" title="Instagram"><i class="fa fa-instagram fa-3x"></i></a>
 </nav>
 
-{{#if @blog.logo}}<h1><a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a></h1>
+{{#if @blog.logo}}<a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="elliespicks.com" /></a>
 {{else}}<span class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></span>{{/if}}
 
 </header>
