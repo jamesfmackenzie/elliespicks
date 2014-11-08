@@ -6,9 +6,9 @@
       <span class="articletitle"><a href="{{url}}">{{title}}</a></span>
 	  <span class="date">{{date format="dddd, Do MMMM YYYY"}}</span>
     </header>
-    <img src="{{image}}" class="post-cover-image" />
-	{{excerpt}} ...
-    <p><a href="{{url}}">Read More</a> | <a href="{{url}}#disqus_thread">Comments</a></p>
+    {{#if image}}<p><img src="{{image}}" class="post-cover-image" /></p>{{/if}}
+	<p>{{excerpt}} ...</p>
+    <p><a href="{{url}}">Read More</a> | <a href="{{url}}#disqus_thread">Comments</a> | <a href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}" target="_blank"><i class="fa fa-facebook"></i> Share on Facebook</a> | <a href="http://twitter.com/home?status=Shared%20from%20elliespicks.com%20-%20{{url absolute="true"}}" target="_blank"><i class="fa fa-twitter"></i> Tweet this</a></p>
     </article>
   
 {{/foreach}}
